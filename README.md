@@ -5,7 +5,11 @@
 
 1. get token from browser // SUBDOMAIN && CLIENT_ID
 ```
-https://www.zopim.com/oauth2/authorizations/new?response_type=token&redirect_uri=http%3A%2F%2Flocalhost%3A8080&client_id=CLIENT_ID&scope=read%20write%20chat&subdomain=SUBDOMAIN
+https://www.zopim.com/oauth2/authorizations/new?response_type=token&
+redirect_uri=http%3A%2F%2Flocalhost%3A8080&
+client_id=CLIENT_ID&
+scope=read%20write%20chat&
+subdomain=SUBDOMAIN
 ```
 
 2. get client ID  // TOKEN
