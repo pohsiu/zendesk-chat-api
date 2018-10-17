@@ -12,11 +12,14 @@ https://www.zopim.com/oauth2/authorizations/new?response_type=token&redirect_uri
 response get client's ID
 
 3. update client_type as confidential // ID && TOKEN
+
 ```curl https://www.zopim.com/api/v2/oauth/clients/ID 3 -d '{"client_type": "confidential"}' \
- -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN"```
+ -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN"
+ ```
 
 4. get token from curl response (the way to refresh token) // CLIENT_ID && CLIENT_SECRET
 ```curl https://www.zopim.com/oauth2/token \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d 'grant_type=client_credentials&client_id=CLIENT_ID&client_secret=CLIENT_SECRET' \
-  -X POST```
+  -X POST
+ ```
