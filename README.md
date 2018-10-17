@@ -16,7 +16,7 @@ curl https://www.zopim.com/api/v2/oauth/clients -H "Authorization: Bearer TOKEN"
 3. update client_type as confidential // ID && TOKEN
 
 ```
-curl https://www.zopim.com/api/v2/oauth/clients/ID 3 -d '{"client_type": "confidential"}' \
+curl https://www.zopim.com/api/v2/oauth/clients/ID -d '{"client_type": "confidential"}' \
  -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN"
  ```
 
