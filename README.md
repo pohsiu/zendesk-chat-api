@@ -25,8 +25,15 @@ curl https://www.zopim.com/api/v2/oauth/clients -H "Authorization: Bearer TOKEN"
 curl https://www.zopim.com/api/v2/oauth/clients/ID -d '{"client_type": "confidential"}' \
  -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN"
  ```
+4. update scopes
 
-4. get token from curl response (the way to refresh token) // CLIENT_ID && CLIENT_SECRET
+```
+curl https://www.zopim.com/api/v2/oauth/clients/ID -d '{"scopes": "read write chat"}' \
+ -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer TOKEN"
+ ```
+
+
+5. get token from curl response (the way to refresh token) // CLIENT_ID && CLIENT_SECRET
 ```
 curl https://www.zopim.com/oauth2/token \
   -H "Content-Type: application/x-www-form-urlencoded" \
