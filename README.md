@@ -7,9 +7,11 @@
 https://www.zopim.com/oauth2/authorizations/new?response_type=token&redirect_uri=http%3A%2F%2Flocalhost%3A8080&client_id=CLIENT_ID&scope=read%20write%20chat&subdomain=SUBDOMAIN
 
 2. get client ID  // TOKEN
-```curl https://www.zopim.com/api/v2/oauth/clients -H "Authorization: Bearer TOKEN"```
 
-response get client's ID
+```
+curl https://www.zopim.com/api/v2/oauth/clients -H "Authorization: Bearer TOKEN"
+```
+   response get client's ID
 
 3. update client_type as confidential // ID && TOKEN
 
