@@ -18,6 +18,21 @@ subdomain=SUBDOMAIN
 curl https://www.zopim.com/api/v2/oauth/clients -H "Authorization: Bearer TOKEN"
 ```
    response get client's ID
+```
+[{
+  "id": ID,
+  "name": {your client name},
+  "company": {company name},
+  "client_secret": {client_secret},
+  "client_identifier": {client_identifier},
+  "client_type": "confidential", 
+  "redirect_uris": "http://localhost:8080", 
+  "scopes": "read write chat",
+  "agent_id": {agent_id}, 
+  "create_date": "2018-10-17T02:32:45", 
+  "update_date": "2018-10-17T10:05:05"
+}]
+```
 
 3. update client_type as confidential // ID && TOKEN
 
