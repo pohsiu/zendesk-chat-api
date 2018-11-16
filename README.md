@@ -1,6 +1,6 @@
 # zendesk
 
-
+source https://support.zendesk.com/hc/en-us/articles/115010760808-Generating-a-REST-API-token-for-integrated-Chat-accounts
 # Get Token via curl
 
 1. get token from browser // SUBDOMAIN && CLIENT_ID
